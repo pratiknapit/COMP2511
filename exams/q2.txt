@@ -1,0 +1,16 @@
+Q2. (a)
+11
+
+
+Q2. (b)
+3 - incorrect, the correct answer is 1.
+
+
+Q2. (c)
+2 - just need to add the node 'u' and 's'
+
+
+Q2. (d)
+No new nodes would need to be added, only 'o' would become a finishing node.
+
+

@@ -1,0 +1,10 @@
+Q3. (a)
+The max amount of num that can be stored in a 2-3-4 tree of 
+this height is 4 * 3 + 3 = 15. Currently we have 10 numbers.
+Thus, we can add a maximum of 5 nodes to keep the same height.
+
+
+Q3. (b)
+
+The values of the root node: 20, 30, 50.
+

@@ -1,0 +1,6 @@
+Q4. O(log n) - halving n each time in the loop
+
+
+
+
+
