@@ -1,0 +1,54 @@
+==47100== Memcheck, a memory error detector
+==47100== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==47100== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==47100== Command: ./testDepthFirstSearch
+==47100== 
+==47100== Invalid read of size 1
+==47100==    at 0x109D9E: GraphIsAdjacent (Graph.c:185)
+==47100==    by 0x1092C4: depthFirstSearch (depthFirstSearch.c:19)
+==47100==    by 0x10930A: depthFirstSearch (depthFirstSearch.c:21)
+==47100==    by 0x10930A: depthFirstSearch (depthFirstSearch.c:21)
+==47100==    by 0x10930A: depthFirstSearch (depthFirstSearch.c:21)
+==47100==    by 0x10930A: depthFirstSearch (depthFirstSearch.c:21)
+==47100==    by 0x10930A: depthFirstSearch (depthFirstSearch.c:21)
+==47100==    by 0x10930A: depthFirstSearch (depthFirstSearch.c:21)
+==47100==    by 0x109251: main (testDepthFirstSearch.c:19)
+==47100==  Address 0x4a15389 is 0 bytes after a block of size 9 alloc'd
+==47100==    at 0x48357BF: malloc (vg_replace_malloc.c:299)
+==47100==    by 0x1099CD: doGraphNew (Graph.c:128)
+==47100==    by 0x109353: GraphNew (Graph.c:25)
+==47100==    by 0x1096EC: GraphRead (Graph.c:76)
+==47100==    by 0x1091D1: main (testDepthFirstSearch.c:10)
+==47100== 
+==47100== Invalid read of size 1
+==47100==    at 0x109D9E: GraphIsAdjacent (Graph.c:185)
+==47100==    by 0x1092C4: depthFirstSearch (depthFirstSearch.c:19)
+==47100==    by 0x10930A: depthFirstSearch (depthFirstSearch.c:21)
+==47100==    by 0x109251: main (testDepthFirstSearch.c:19)
+==47100==  Address 0x4a152e9 is 0 bytes after a block of size 9 alloc'd
+==47100==    at 0x48357BF: malloc (vg_replace_malloc.c:299)
+==47100==    by 0x1099CD: doGraphNew (Graph.c:128)
+==47100==    by 0x109353: GraphNew (Graph.c:25)
+==47100==    by 0x1096EC: GraphRead (Graph.c:76)
+==47100==    by 0x1091D1: main (testDepthFirstSearch.c:10)
+==47100== 
+==47100== Invalid read of size 1
+==47100==    at 0x109D9E: GraphIsAdjacent (Graph.c:185)
+==47100==    by 0x1092C4: depthFirstSearch (depthFirstSearch.c:19)
+==47100==    by 0x109251: main (testDepthFirstSearch.c:19)
+==47100==  Address 0x4a15339 is 0 bytes after a block of size 9 alloc'd
+==47100==    at 0x48357BF: malloc (vg_replace_malloc.c:299)
+==47100==    by 0x1099CD: doGraphNew (Graph.c:128)
+==47100==    by 0x109353: GraphNew (Graph.c:25)
+==47100==    by 0x1096EC: GraphRead (Graph.c:76)
+==47100==    by 0x1091D1: main (testDepthFirstSearch.c:10)
+==47100== 
+==47100== 
+==47100== HEAP SUMMARY:
+==47100==     in use at exit: 0 bytes in 0 blocks
+==47100==   total heap usage: 13 allocs, 13 frees, 8,361 bytes allocated
+==47100== 
+==47100== All heap blocks were freed -- no leaks are possible
+==47100== 
+==47100== For counts of detected and suppressed errors, rerun with: -v
+==47100== ERROR SUMMARY: 9 errors from 3 contexts (suppressed: 0 from 0)

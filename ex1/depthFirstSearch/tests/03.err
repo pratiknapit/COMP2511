@@ -1,0 +1,55 @@
+==47121== Memcheck, a memory error detector
+==47121== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==47121== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==47121== Command: ./testDepthFirstSearch
+==47121== 
+==47121== Invalid read of size 1
+==47121==    at 0x109D9E: GraphIsAdjacent (Graph.c:185)
+==47121==    by 0x1092C4: depthFirstSearch (depthFirstSearch.c:19)
+==47121==    by 0x10930A: depthFirstSearch (depthFirstSearch.c:21)
+==47121==    by 0x10930A: depthFirstSearch (depthFirstSearch.c:21)
+==47121==    by 0x10930A: depthFirstSearch (depthFirstSearch.c:21)
+==47121==    by 0x10930A: depthFirstSearch (depthFirstSearch.c:21)
+==47121==    by 0x10930A: depthFirstSearch (depthFirstSearch.c:21)
+==47121==    by 0x10930A: depthFirstSearch (depthFirstSearch.c:21)
+==47121==    by 0x10930A: depthFirstSearch (depthFirstSearch.c:21)
+==47121==    by 0x109251: main (testDepthFirstSearch.c:19)
+==47121==  Address 0x4a152d8 is 0 bytes after a block of size 8 alloc'd
+==47121==    at 0x48357BF: malloc (vg_replace_malloc.c:299)
+==47121==    by 0x1099CD: doGraphNew (Graph.c:128)
+==47121==    by 0x109353: GraphNew (Graph.c:25)
+==47121==    by 0x1096EC: GraphRead (Graph.c:76)
+==47121==    by 0x1091D1: main (testDepthFirstSearch.c:10)
+==47121== 
+==47121== Invalid read of size 1
+==47121==    at 0x109D9E: GraphIsAdjacent (Graph.c:185)
+==47121==    by 0x1092C4: depthFirstSearch (depthFirstSearch.c:19)
+==47121==    by 0x10930A: depthFirstSearch (depthFirstSearch.c:21)
+==47121==    by 0x109251: main (testDepthFirstSearch.c:19)
+==47121==  Address 0x4a15238 is 0 bytes after a block of size 8 alloc'd
+==47121==    at 0x48357BF: malloc (vg_replace_malloc.c:299)
+==47121==    by 0x1099CD: doGraphNew (Graph.c:128)
+==47121==    by 0x109353: GraphNew (Graph.c:25)
+==47121==    by 0x1096EC: GraphRead (Graph.c:76)
+==47121==    by 0x1091D1: main (testDepthFirstSearch.c:10)
+==47121== 
+==47121== Invalid read of size 1
+==47121==    at 0x109D9E: GraphIsAdjacent (Graph.c:185)
+==47121==    by 0x1092C4: depthFirstSearch (depthFirstSearch.c:19)
+==47121==    by 0x109251: main (testDepthFirstSearch.c:19)
+==47121==  Address 0x4a15288 is 0 bytes after a block of size 8 alloc'd
+==47121==    at 0x48357BF: malloc (vg_replace_malloc.c:299)
+==47121==    by 0x1099CD: doGraphNew (Graph.c:128)
+==47121==    by 0x109353: GraphNew (Graph.c:25)
+==47121==    by 0x1096EC: GraphRead (Graph.c:76)
+==47121==    by 0x1091D1: main (testDepthFirstSearch.c:10)
+==47121== 
+==47121== 
+==47121== HEAP SUMMARY:
+==47121==     in use at exit: 0 bytes in 0 blocks
+==47121==   total heap usage: 12 allocs, 12 frees, 8,336 bytes allocated
+==47121== 
+==47121== All heap blocks were freed -- no leaks are possible
+==47121== 
+==47121== For counts of detected and suppressed errors, rerun with: -v
+==47121== ERROR SUMMARY: 8 errors from 3 contexts (suppressed: 0 from 0)
