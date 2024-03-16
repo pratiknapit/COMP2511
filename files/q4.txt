@@ -1,0 +1,35 @@
+Question 4
+
+Which of the data structures is most suitable? Justify your answer.
+You must use time complexities as a basis for your justification.
+
+Ordered Linked List 
+
+Push - O(n) (insert) 
+Pop - O(1) (remove)
+Print - O(n) (print & search)
+
+Ordered Array 
+
+Push - O(n) (insert) 
+Pop - O(n) (remove)
+Print - O(n) (print & search)
+
+AVL Tree 
+
+Push - O(log n) (insertion)
+Pop - O(log n) (removal and rebalancing)
+Print - O(n) (print/search) 
+
+Hashtable 
+
+A hastable cannot keep the order of a queue, therefore do not consider.
+
+Heap 
+Push - O(log n)
+Pop - O(log n)
+Print - O(n) (print) 
+
+Therefore, the best data structure to use is the Heap or AVL tree. A heap is more often used.
+
+

@@ -1,0 +1,41 @@
+Question 3
+
+Note: if you need to promote a value, you must promote the smaller 
+value from the available alternatives (if any). Justify your answer.
+
+(a) 
+(a1) What value(s) would be stored in the root node of the above 2-3-4 
+     tree after the insertion of the value 8? 
+     Justify your answer.
+     The insertion of 8 would not change the root node as the node that contains 3 including 8. Therefore,
+     we will not need to promote any values.
+     Therefore the values of the root node would still be 12 35 60.
+     
+
+
+
+(a2) What value(s) would be stored in the node that now contains 8? 
+     Justify your answer.
+     The values that would be stored in the node that contains 8 is 1 7 8. This is because we will
+     simply insert 8 as the node is not full, we do not need to promote anything.
+
+
+
+(b) 
+(b1) What value(s) would be stored in the root node of the above 2-3-4 
+     tree after the insertion of the value 50? 
+     Justify your answer.
+     If we insert 50 then as the node with 36 44 57 is all full. Then we need to promote 44 to the upper node.
+     Therefore As the upper node is already full, we would then need to promote 35. Therefore our root node 
+     would contain only 35.
+
+
+
+(b2) What value(s) would be stored in the node that now contains 50? 
+     Justify your answer.
+
+     The node that now contains 50 will now have 50 57, as we have promoted 44.
+
+
+
+

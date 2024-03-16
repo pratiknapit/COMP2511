@@ -1,0 +1,8 @@
+Question 1
+
+What is the time complexity of the algorithm? Justify your answer.
+
+Since we are breaking down the problem int two subproblems of size n/2, to solve this problem it 
+will take O(log n). To convert a problem and compone takes O(n), therefore, that total time complexity of 
+this algorithm is O(n * log n).
+

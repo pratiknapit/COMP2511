@@ -1,0 +1,9 @@
+Question 2
+
+What is the maximum input size? Justify your answer.
+
+If an algorithm can process an input of size 1000 in 1 day. Therefore, an algorithm with exponential time O(10^n),
+then for n = 1000, this algorithm will run O(10 * 1000). IF we have an algorithm that is 10, 000 times faster. 
+Therefore we can now run in O((10^1000) * (10 ^4)) = O(10 ^ 1004) 
+
+Therefore, the max input size is 1004 in one day if it uses the same implementation.

@@ -1,0 +1,16 @@
+Q5. (a)
+A hamiltonian path is a path which connects two vertices in a graph G, 
+such that the path includes each vertex in G exactly once.
+
+A euler path is a path which connects two vertices in a graph G, 
+such that the path incldes each edge in G exactly once. 
+An Euler path is a ptha that uses every edge in a grpah with no repeats. Being a path,
+it does not have to return to the starting vertex.
+
+
+Q5. (b)
+Yes this graph has both hamiltonian and euler paths.
+Hamiltonian paths: {0, 2, 1, 3, 0}, {0 , 1, 2, 3, 0}, etc. 
+
+
+
